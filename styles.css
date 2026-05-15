@@ -1239,6 +1239,226 @@ h3 {
   }
 }
 
+/* App-aligned privacy notice */
+.credit-privacy-page {
+  color: var(--credit-purple-dark);
+  background:
+    linear-gradient(180deg, #fbf8ff 0%, #fff 44%, #fcfaff 100%);
+}
+
+.credit-privacy-page main,
+.credit-privacy-page footer {
+  position: relative;
+  z-index: 1;
+}
+
+.privacy-hero {
+  padding: clamp(42px, 6vw, 78px) 0 clamp(32px, 5vw, 58px);
+  background:
+    radial-gradient(circle at 84% 16%, rgba(83, 221, 185, 0.24), transparent 34%),
+    radial-gradient(circle at 16% 20%, rgba(105, 56, 212, 0.18), transparent 32%),
+    linear-gradient(135deg, #fbf8ff 0%, #fff 62%, #effffb 100%);
+}
+
+.privacy-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.72fr);
+  gap: clamp(24px, 5vw, 64px);
+  align-items: center;
+}
+
+.privacy-hero h1 {
+  max-width: 850px;
+  margin: 14px 0;
+  color: var(--credit-purple-dark);
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  font-size: clamp(2.35rem, 5vw, 4.9rem);
+  font-weight: 950;
+  line-height: 1;
+}
+
+.privacy-hero p {
+  max-width: 720px;
+  color: var(--credit-muted);
+  font-size: 1.08rem;
+  line-height: 1.72;
+}
+
+.privacy-date {
+  width: fit-content;
+  margin-top: 22px;
+  padding: 10px 14px;
+  border: 1px solid rgba(105, 56, 212, 0.18);
+  border-radius: 999px;
+  background: #f3ecff;
+  color: var(--credit-purple-dark);
+  font-weight: 850;
+}
+
+.privacy-summary-panel {
+  padding: clamp(24px, 4vw, 34px);
+  border: 1px solid var(--credit-line);
+  border-radius: 28px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(243, 236, 255, 0.88));
+  box-shadow: var(--credit-shadow);
+}
+
+.privacy-summary-panel span {
+  display: inline-flex;
+  color: var(--credit-purple);
+  font-size: 0.78rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.privacy-summary-panel strong {
+  display: block;
+  margin: 12px 0;
+  color: var(--credit-purple-dark);
+  font-size: clamp(1.45rem, 2.7vw, 2.15rem);
+  line-height: 1.08;
+}
+
+.privacy-summary-panel p {
+  margin: 0;
+}
+
+.privacy-content-section {
+  padding: clamp(42px, 6vw, 72px) 0 clamp(58px, 8vw, 96px);
+}
+
+.credit-privacy-page .privacy-layout {
+  grid-template-columns: 300px minmax(0, 1fr);
+  gap: 26px;
+}
+
+.credit-privacy-page .privacy-sidebar-neutral {
+  top: 104px;
+  border-color: var(--credit-line);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 18px 44px rgba(46, 23, 109, 0.1);
+}
+
+.credit-privacy-page .privacy-sidebar-neutral strong {
+  color: var(--credit-purple-dark);
+  font-size: 1.02rem;
+}
+
+.credit-privacy-page .privacy-sidebar-neutral a {
+  min-height: 34px;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  color: #57526f;
+  font-weight: 850;
+}
+
+.credit-privacy-page .privacy-sidebar-neutral a:hover {
+  padding-left: 10px;
+  color: var(--credit-purple);
+  background: var(--credit-lavender);
+  text-decoration: none;
+}
+
+.credit-privacy-page .privacy-card {
+  border: 1px solid var(--credit-line);
+  border-top: 0;
+  border-radius: 30px;
+  padding: clamp(24px, 4vw, 40px);
+  color: var(--credit-purple-dark);
+  background: #fff;
+  box-shadow: var(--credit-shadow);
+}
+
+.credit-privacy-page .privacy-card::before {
+  content: "";
+  display: block;
+  height: 8px;
+  margin: calc(clamp(24px, 4vw, 40px) * -1) calc(clamp(24px, 4vw, 40px) * -1) 28px;
+  border-radius: 30px 30px 0 0;
+  background: linear-gradient(90deg, var(--credit-purple-deep), var(--credit-purple), var(--credit-mint));
+}
+
+.credit-privacy-page .privacy-kicker {
+  color: var(--credit-purple);
+  font-weight: 950;
+}
+
+.credit-privacy-page .privacy-card h1,
+.credit-privacy-page .privacy-card h2,
+.credit-privacy-page .privacy-document-title {
+  color: var(--credit-purple-dark);
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+.credit-privacy-page .privacy-document-title {
+  margin: 0 0 22px;
+  font-size: clamp(1.65rem, 2.6vw, 2.2rem);
+  font-weight: 950;
+}
+
+.credit-privacy-page .privacy-card h2:not(.privacy-document-title) {
+  margin-bottom: 10px;
+  font-size: 1.32rem;
+  font-weight: 950;
+}
+
+.credit-privacy-page .privacy-card p,
+.credit-privacy-page .privacy-card li {
+  color: #58536e;
+}
+
+.credit-privacy-page .privacy-card strong {
+  color: var(--credit-purple-dark);
+}
+
+.credit-privacy-page .privacy-card a {
+  color: var(--credit-purple);
+  font-weight: 850;
+}
+
+.credit-privacy-page .privacy-card code {
+  padding: 2px 6px;
+  border-radius: 8px;
+  color: var(--credit-purple-deep);
+  background: var(--credit-lavender);
+}
+
+.credit-privacy-page .notice-box.neutral {
+  border-color: rgba(105, 56, 212, 0.18);
+  border-radius: 24px;
+  background:
+    linear-gradient(135deg, rgba(243, 236, 255, 0.86), rgba(239, 255, 251, 0.82));
+}
+
+.credit-privacy-page .privacy-card section + section {
+  margin-top: 28px;
+}
+
+@media (max-width: 980px) {
+  .privacy-hero-grid,
+  .credit-privacy-page .privacy-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .credit-privacy-page .privacy-sidebar-neutral {
+    position: static;
+  }
+}
+
+@media (max-width: 720px) {
+  .privacy-hero h1 {
+    font-size: clamp(2.15rem, 11vw, 3.5rem);
+  }
+
+  .credit-privacy-page .privacy-card {
+    border-radius: 24px;
+  }
+}
+
 /* Developer portal and finance app pages */
 .developer-page,
 .credit-page {
