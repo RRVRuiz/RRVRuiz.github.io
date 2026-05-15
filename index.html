@@ -1,158 +1,117 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Matematicas Divertidas | Sitio oficial</title>
-  <meta name="description" content="Sitio oficial de Matematicas Divertidas, una aventura educativa egipcia para secundaria." />
+  <title>RRVRuiz | Apps y privacidad</title>
+  <meta name="description" content="Sitio del desarrollador RRVRuiz con informacion y avisos de privacidad de sus aplicaciones." />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="home-page">
-  <header class="site-header">
+<body class="developer-page">
+  <header class="site-header developer-header">
     <div class="container nav">
-      <a href="index.html" class="logo">Matematicas Divertidas</a>
+      <a href="index.html" class="logo developer-logo">RRVRuiz</a>
       <nav>
-        <a href="#historia">Historia</a>
-        <a href="#gameplay">Gameplay</a>
-        <a href="#aprendizaje">Aprendizaje</a>
-        <a href="#capturas">Capturas</a>
-        <a href="privacy.html">Privacidad</a>
+        <a href="#apps">Apps</a>
+        <a href="#privacidad">Privacidad</a>
+        <a href="#contacto">Contacto</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-copy panel menu-panel">
-          <div class="panel-inner">
-            <span class="eyebrow">Aventura educativa para secundaria</span>
-            <h1>Reconstruye el Egipto antiguo con matematicas</h1>
-            <p>
-              En <strong>Matematicas Divertidas</strong>, juegas como una exploradora que debe recuperar reliquias
-              y restaurar monumentos resolviendo desafios de calculo, logica y rapidez mental.
-              Cada respuesta correcta te acerca a reconstruir la historia perdida del desierto.
-            </p>
-            <div class="hero-actions">
-              <a class="button primary" href="#gameplay">Ver gameplay</a>
-              <a class="button secondary" href="privacy.html">Politica de privacidad</a>
-            </div>
-            
+    <section class="developer-hero">
+      <div class="container developer-hero-grid">
+        <div>
+          <p class="developer-kicker">Desarrollador independiente</p>
+          <h1>Apps utiles, claras y con privacidad explicada sin vueltas.</h1>
+          <p>
+            Este es el centro publico de RRVRuiz para reunir las apps publicadas, sus paginas de soporte
+            y sus avisos de privacidad. La estructura esta preparada para agregar nuevas aplicaciones sin
+            mezclar sus politicas ni romper enlaces de Google Play.
+          </p>
+          <div class="developer-actions">
+            <a class="developer-button primary" href="#apps">Ver apps</a>
+            <a class="developer-button secondary" href="mailto:RRVRicardoRuiz@gmail.com">Contactar</a>
           </div>
-      </div>
-    </section>
-
-    <section id="historia" class="section">
-      <div class="container narrow panel stone-panel story-panel">
-        <div class="panel-inner">
-          <h2>Historia de la aventura</h2>
+        </div>
+        <div class="developer-status" aria-label="Resumen de privacidad">
+          <span>Arquitectura del sitio</span>
+          <strong>Una carpeta por app</strong>
           <p>
-            Una tormenta de arena revela un templo sellado bajo las dunas. Para abrir cada camara,
-            debes resolver pruebas matematicas que combinan operaciones, patrones y toma de decisiones.
-          </p>
-          <p>
-            Al avanzar, desbloqueas piezas del mapa de reconstruccion y restauras lugares iconicos
-            como la Esfinge, obeliscos y templos. El progreso no solo se refleja en puntuacion,
-            tambien en el mundo que vas reconstruyendo.
+            Cada aplicacion vive en <code>apps/nombre-app/</code> con su pagina, soporte y aviso de
+            privacidad. Asi cada ficha de Google Play puede apuntar a una URL especifica.
           </p>
         </div>
       </div>
     </section>
 
-    <section id="gameplay" class="section alt">
+    <section id="apps" class="developer-section">
       <div class="container">
-        <h2>Gameplay</h2>
-        <div class="cards three gameplay-grid">
-          <article class="card panel stone-panel">
-            <div class="panel-inner">
-              <h3>1. Elige reto y dificultad</h3>
-              <p>Selecciona tema matematico y nivel para iniciar una sesion dinamica con ritmo arcade.</p>
+        <div class="section-heading">
+          <p class="developer-kicker">Aplicaciones</p>
+          <h2>Catalogo de apps</h2>
+        </div>
+        <div class="app-grid">
+          <article class="app-card finance-card">
+            <div>
+              <span class="app-tag">Finanzas personales</span>
+              <h3>Proyeccion Credito Hipotecario</h3>
+              <p>
+                Herramienta Android para capturar datos de un credito hipotecario, importar estados
+                de cuenta PDF localmente y simular escenarios de pago.
+              </p>
+            </div>
+            <div class="app-links">
+              <a href="apps/proyeccion-credito/index.html">Pagina de la app</a>
+              <a href="apps/proyeccion-credito/privacidad.html">Aviso de privacidad</a>
             </div>
           </article>
-          <article class="card panel stone-panel">
-            <div class="panel-inner">
-              <h3>2. Rompe vasijas correctas</h3>
-              <p>Resuelve problemas en tiempo real y golpea el objetivo correcto para sumar puntos y monedas.</p>
+
+          <article class="app-card learning-card">
+            <div>
+              <span class="app-tag">Educacion</span>
+              <h3>Matematicas Divertidas</h3>
+              <p>
+                Juego educativo de ritmo arcade para practicar calculo, logica y rapidez mental en
+                una aventura inspirada en el Egipto antiguo.
+              </p>
             </div>
-          </article>
-          <article class="card panel stone-panel">
-            <div class="panel-inner">
-              <h3>3. Restaura monumentos</h3>
-              <p>Invierte monedas en el mapa de reconstruccion y desbloquea nuevas estaciones del Egipto antiguo.</p>
+            <div class="app-links">
+              <a href="apps/matematicas/index.html">Pagina de la app</a>
+              <a href="apps/matematicas/privacidad.html">Politica de privacidad</a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="aprendizaje" class="section">
-      <div class="container">
-        <h2>Habilidades que fortalece</h2>
-        <div class="cards three menu-grid">
-          <article class="card panel menu-panel">
-            <div class="panel-inner">
-              <h3>Calculo mental</h3>
-              <p>Practica operaciones con respuesta rapida y precision.</p>
-            </div>
-          </article>
-          <article class="card panel menu-panel">
-            <div class="panel-inner">
-              <h3>Razonamiento logico</h3>
-              <p>Identifica patrones y toma decisiones bajo presion de tiempo.</p>
-            </div>
-          </article>
-          <article class="card panel menu-panel">
-            <div class="panel-inner">
-              <h3>Motivacion academica</h3>
-              <p>Convierte la practica de matematicas en una aventura con recompensas.</p>
-            </div>
-          </article>
+    <section id="privacidad" class="developer-section muted">
+      <div class="container info-band">
+        <div>
+          <p class="developer-kicker">Privacidad</p>
+          <h2>Enlaces listos para Play Console</h2>
+          <p>
+            Usa el aviso especifico de cada app en el campo de privacidad de Google Play. Para la nueva
+            app financiera, la URL recomendada es:
+          </p>
         </div>
-      </div>
-    </section>
-
-    <section id="capturas" class="section alt">
-      <div class="container">
-        <h2>Capturas del juego</h2>
-        <p class="section-intro">
-          Se incluyen PNG template para reemplazar rapidamente por capturas reales,
-          manteniendo los mismos nombres de archivo.
-        </p>
-        <div class="media-grid showcase-grid">
-          <figure class="media-card panel">
-            <div class="panel-inner">
-              <img src="assets/screenshots/template-gameplay-01.jpg" alt="Template gameplay 01" />
-              
-            </div>
-          </figure>
-          <figure class="media-card panel">
-            <div class="panel-inner">
-              <img src="assets/screenshots/template-gameplay-02.jpg" alt="Template gameplay 02" />
-              
-            </div>
-          </figure>
-          <figure class="media-card panel">
-            <div class="panel-inner">
-              <img src="assets/screenshots/template-gameplay-03.jpg" alt="Template gameplay 03" />
-              
-            </div>
-          </figure>
-        </div>
+        <a class="privacy-url" href="apps/proyeccion-credito/privacidad.html">apps/proyeccion-credito/privacidad.html</a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer id="contacto" class="site-footer developer-footer">
     <div class="container footer-grid">
       <div>
-        <strong>Matematicas Divertidas</strong>
-        <p>Aventura egipcia educativa para secundaria.</p>
+        <strong>RRVRuiz</strong>
+        <p>Apps Android, herramientas educativas y utilidades personales.</p>
       </div>
       <div>
-        <strong>Enlaces</strong>
+        <strong>Apps</strong>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="#gameplay">Gameplay</a></li>
-          <li><a href="privacy.html">Privacidad</a></li>
+          <li><a href="apps/proyeccion-credito/index.html">Proyeccion Credito Hipotecario</a></li>
+          <li><a href="apps/matematicas/index.html">Matematicas Divertidas</a></li>
         </ul>
       </div>
       <div>
