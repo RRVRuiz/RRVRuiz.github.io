@@ -3,121 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RRVRuiz | Apps y privacidad</title>
-  <meta name="description" content="Sitio del desarrollador RRVRuiz con informacion y avisos de privacidad de sus aplicaciones." />
+  <title>RRVRuiz | Apps independientes</title>
+  <meta name="description" content="Apps Android de RRVRuiz: herramientas financieras, educativas y utilidades digitales." />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="developer-page">
-  <header class="site-header developer-header">
-    <div class="container nav">
-      <a href="index.html" class="logo developer-logo">RRVRuiz</a>
+<body class="portfolio-page">
+  <header class="portfolio-header">
+    <div class="container portfolio-nav">
+      <a href="index.html" class="portfolio-mark">RRVRuiz</a>
       <nav>
         <a href="#apps">Apps</a>
         <a href="#privacidad">Privacidad</a>
-        <a href="#contacto">Contacto</a>
+        <a href="mailto:RRVRicardoRuiz@gmail.com">Contacto</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="developer-hero">
-      <div class="container developer-hero-grid">
-        <div>
-          <p class="developer-kicker">Desarrollador independiente</p>
-          <h1>Apps utiles, claras y con privacidad explicada sin vueltas.</h1>
+    <section class="portfolio-hero">
+      <div class="container portfolio-hero-grid">
+        <div class="portfolio-copy">
+          <p class="portfolio-eyebrow">Apps Android de RRVRuiz</p>
+          <h1>Apps practicas para aprender, organizar y tomar mejores decisiones.</h1>
           <p>
-            Este es el centro publico de RRVRuiz para reunir las apps publicadas, sus paginas de soporte
-            y sus avisos de privacidad. La estructura esta preparada para agregar nuevas aplicaciones sin
-            mezclar sus politicas ni romper enlaces de Google Play.
+            Apps diseñadas para resolver tareas concretas con una interfaz clara, cuidado por la
+            privacidad y uso cotidiano sin complicaciones.
           </p>
-          <div class="developer-actions">
-            <a class="developer-button primary" href="#apps">Ver apps</a>
-            <a class="developer-button secondary" href="mailto:RRVRicardoRuiz@gmail.com">Contactar</a>
+          <div class="portfolio-actions">
+            <a class="portfolio-button primary" href="apps/proyeccion-credito/index.html">Ver app destacada</a>
+            <a class="portfolio-button secondary" href="#apps">Explorar apps</a>
           </div>
         </div>
-        <div class="developer-status" aria-label="Resumen de privacidad">
-          <span>Arquitectura del sitio</span>
-          <strong>Una carpeta por app</strong>
-          <p>
-            Cada aplicacion vive en <code>apps/nombre-app/</code> con su pagina, soporte y aviso de
-            privacidad. Asi cada ficha de Google Play puede apuntar a una URL especifica.
-          </p>
-        </div>
+
+        <a class="featured-app app-phone-link" href="apps/proyeccion-credito/index.html" aria-label="Abrir Proyeccion Credito Hipotecario">
+          <span class="phone-frame small">
+            <img src="assets/proyeccion-credito/screenshots/app-01-current.png" alt="Pantalla Inicio de Proyeccion Credito Hipotecario" />
+          </span>
+          <div class="featured-app-caption">
+            <span>App destacada</span>
+            <strong>Proyeccion Credito Hipotecario</strong>
+          </div>
+        </a>
       </div>
     </section>
 
-    <section id="apps" class="developer-section">
+    <section id="apps" class="portfolio-section">
       <div class="container">
-        <div class="section-heading">
-          <p class="developer-kicker">Aplicaciones</p>
-          <h2>Catalogo de apps</h2>
+        <div class="portfolio-section-title">
+          <p class="portfolio-eyebrow">Catalogo</p>
+          <h2>Apps publicadas</h2>
         </div>
-        <div class="app-grid">
-          <article class="app-card finance-card">
-            <div>
-              <span class="app-tag">Finanzas personales</span>
-              <h3>Proyeccion Credito Hipotecario</h3>
-              <p>
-                Herramienta Android para capturar datos de un credito hipotecario, importar estados
-                de cuenta PDF localmente y simular escenarios de pago.
-              </p>
-            </div>
-            <div class="app-links">
-              <a href="apps/proyeccion-credito/index.html">Pagina de la app</a>
-              <a href="apps/proyeccion-credito/privacidad.html">Aviso de privacidad</a>
+
+        <div class="portfolio-apps">
+          <article class="portfolio-app-card app-credit">
+            <span>Finanzas personales</span>
+            <h3>Proyeccion Credito Hipotecario</h3>
+            <p>
+              Proyecta tu credito hipotecario con pagos futuros, pagos extra y datos de tus estados de cuenta.
+            </p>
+            <div class="portfolio-card-links">
+              <a href="apps/proyeccion-credito/index.html">Pagina</a>
+              <a href="apps/proyeccion-credito/privacidad.html">Privacidad</a>
             </div>
           </article>
 
-          <article class="app-card learning-card">
-            <div>
-              <span class="app-tag">Educacion</span>
-              <h3>Matematicas Divertidas</h3>
-              <p>
-                Juego educativo de ritmo arcade para practicar calculo, logica y rapidez mental en
-                una aventura inspirada en el Egipto antiguo.
-              </p>
-            </div>
-            <div class="app-links">
-              <a href="apps/matematicas/index.html">Pagina de la app</a>
-              <a href="apps/matematicas/privacidad.html">Politica de privacidad</a>
+          <article class="portfolio-app-card app-math">
+            <span>Educacion</span>
+            <h3>Matematicas Divertidas</h3>
+            <p>
+              Juego educativo para practicar calculo, logica y rapidez mental.
+            </p>
+            <div class="portfolio-card-links">
+              <a href="apps/matematicas/index.html">Pagina</a>
+              <a href="apps/matematicas/privacidad.html">Privacidad</a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="privacidad" class="developer-section muted">
-      <div class="container info-band">
+    <section id="privacidad" class="privacy-strip">
+      <div class="container privacy-strip-inner">
         <div>
-          <p class="developer-kicker">Privacidad</p>
-          <h2>Enlaces listos para Play Console</h2>
+          <p class="portfolio-eyebrow">Privacidad</p>
+          <h2>Avisos claros para cada app.</h2>
           <p>
-            Usa el aviso especifico de cada app en el campo de privacidad de Google Play. Para la nueva
-            app financiera, la URL recomendada es:
+            Cada app incluye un aviso claro sobre datos, permisos, terceros y opciones de borrado.
           </p>
         </div>
-        <a class="privacy-url" href="apps/proyeccion-credito/privacidad.html">apps/proyeccion-credito/privacidad.html</a>
+        <a class="portfolio-button primary" href="apps/proyeccion-credito/privacidad.html">Aviso de privacidad</a>
       </div>
     </section>
   </main>
 
-  <footer id="contacto" class="site-footer developer-footer">
-    <div class="container footer-grid">
+  <footer class="portfolio-footer">
+    <div class="container portfolio-footer-grid">
       <div>
         <strong>RRVRuiz</strong>
-        <p>Apps Android, herramientas educativas y utilidades personales.</p>
-      </div>
-      <div>
-        <strong>Apps</strong>
-        <ul>
-          <li><a href="apps/proyeccion-credito/index.html">Proyeccion Credito Hipotecario</a></li>
-          <li><a href="apps/matematicas/index.html">Matematicas Divertidas</a></li>
-        </ul>
+        <p>Apps Android y herramientas digitales.</p>
       </div>
       <div>
         <strong>Contacto</strong>
-        <p>RRVRicardoRuiz@gmail.com</p>
-        <p>Desarrollador: RRVRuiz</p>
+        <p><a href="mailto:RRVRicardoRuiz@gmail.com">RRVRicardoRuiz@gmail.com</a></p>
+      </div>
+      <div>
+        <strong>Privacidad</strong>
+        <p><a href="apps/proyeccion-credito/privacidad.html">Proyeccion Credito Hipotecario</a></p>
+        <p><a href="apps/matematicas/privacidad.html">Matematicas Divertidas</a></p>
       </div>
     </div>
   </footer>

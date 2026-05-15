@@ -47,8 +47,8 @@
           <h2>1. Resumen claro</h2>
           <p>
             <strong>Proyeccion Credito Hipotecario</strong> funciona principalmente de forma local:
-            no requiere crear cuenta, no usa un servidor propio y no envia al desarrollador los datos
-            financieros que capturas. La app puede mostrar anuncios mediante Google AdMob; ese SDK puede
+            no requiere crear cuenta y no envia tus datos financieros a servidores de RRVRuiz.
+            La app puede mostrar anuncios mediante Google AdMob; ese servicio de anuncios puede
             tratar identificadores del dispositivo, identificador de publicidad, datos tecnicos y datos de
             interaccion con anuncios conforme a las politicas de Google.
           </p>
@@ -107,11 +107,11 @@
           <h2>5. Comparticion de datos</h2>
           <p>
             El desarrollador no recibe ni comparte los datos financieros que capturas en la app. No existe
-            backend propio, sincronizacion en la nube propia ni creacion de cuentas.
+            servidores propios, sincronizacion propia en la nube ni creacion de cuentas.
           </p>
           <p>
-            La excepcion tecnica es la publicidad: al cargar anuncios, Google AdMob puede recopilar o tratar
-            datos tecnicos y de publicidad directamente a traves de su SDK. Esa actividad se describe en la
+            La excepcion es la publicidad: al cargar anuncios, Google AdMob puede recopilar o tratar
+            datos tecnicos y de publicidad directamente a traves de su servicio. Esa actividad se describe en la
             seccion siguiente.
           </p>
         </section>
@@ -119,13 +119,13 @@
         <section id="admob">
           <h2>6. Publicidad y servicios de terceros</h2>
           <p>
-            La app integra Google Mobile Ads SDK / AdMob para mostrar anuncios. Para operar anuncios,
+            La app integra Google Mobile Ads / AdMob para mostrar anuncios. Para operar anuncios,
             Google puede tratar datos como identificador de publicidad de Android, identificadores del
             dispositivo, direccion IP, informacion del dispositivo, informacion de red, impresiones, clics
             e interacciones publicitarias.
           </p>
           <p>
-            La app declara el permiso <code>com.google.android.gms.permission.AD_ID</code> porque el SDK de
+            La app declara el permiso <code>com.google.android.gms.permission.AD_ID</code> porque el servicio de
             anuncios puede usar el identificador de publicidad conforme a las reglas de Google Play. Puedes
             limitar o restablecer el ID de publicidad desde los ajustes de privacidad de Android, segun la
             version de tu dispositivo.
@@ -142,8 +142,8 @@
           <h2>7. Permisos y accesos tecnicos</h2>
           <ul>
             <li><strong>Internet:</strong> necesario para cargar anuncios de AdMob.</li>
-            <li><strong>Estado de red:</strong> permite conocer si hay conectividad para funciones tecnicas como anuncios.</li>
-            <li><strong>ID de publicidad:</strong> usado por el SDK de anuncios conforme a las politicas de Google.</li>
+            <li><strong>Estado de red:</strong> permite conocer si hay conectividad para funciones como la carga de anuncios.</li>
+            <li><strong>ID de publicidad:</strong> usado por el servicio de anuncios conforme a las politicas de Google.</li>
             <li><strong>Documentos PDF:</strong> acceso solo cuando eliges un archivo con el selector del sistema Android.</li>
           </ul>
           <p>
@@ -154,7 +154,7 @@
         <section id="seguridad">
           <h2>8. Seguridad</h2>
           <p>
-            Los datos de credito se almacenan localmente en una base de datos Room del dispositivo. La app
+            Los datos del credito se almacenan localmente en tu dispositivo. La app
             excluye esa base de datos de respaldos automaticos y de transferencia de dispositivo configurados
             por Android. La seguridad practica tambien depende de las protecciones de tu dispositivo, como
             bloqueo de pantalla, cifrado del sistema operativo y control fisico del equipo.
